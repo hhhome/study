@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/master.css">
+	<script type="text/javascript" src="js/jBase.js"></script>
+	<script src="js/scrollpic-cus.js" type="text/javascript"></script>
+	<style>
+		.roll{ width: 800px; margin: 0 auto;}
+		.roll-list{ overflow: hidden; zoom:1; }
+		.roll-list li{ float: left; display: inline; width: 100px; height: 100px; background: #ccc;}
+	</style>
+</head>
+<body>
+	<div class="roll" id="pic">
+		<ul class="roll-list">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+			<li>6</li>
+			<li>7</li>
+			<li>8</li>
+		</ul>
+	</div>
+	<a href="javascript:;" class="prev" id="prev">上一个</a><br>
+	<a href="javascript:;" class="next" id="next">下一个</a>
+<script type="text/javascript">
+	/*scrollPic_01 = new ScrollPic();
+	scrollPic_01.scrollContId   = "pic"; //图片容器ID
+	scrollPic_01.arrLeftId      = "prev"; //左按钮ID
+	scrollPic_01.arrRightId     = "next"; //右按钮ID
+	scrollPic_01.frameWidth     = 800; //图片容器宽度
+	scrollPic_01.pageWidth      = 100; //每张图片宽度
+	scrollPic_01.speed          = 10; //移动速度(单位毫秒，越小越快)
+	scrollPic_01.space          = 5; //每次移动像素(单位px，越大越快)
+	scrollPic_01.autoPlay       = false; //自动播放
+	scrollPic_01.autoPlayTime   = 3; //自动播放间隔时间(秒)
+	scrollPic_01.initialize();  //初始化*/
+/*
+	jBase.addEvent(jBase.$$('prev'),'click',a);
+	function a(){
+		alert(this.nodeName.toLowerCase());
+	}*/
+	//jBase.removeEvent(jBase.$$('prev'),'click',a);
+
+	var sp1 = new ScrollPic();
+
+	sp1.sContentId = "pic";
+	sp1.frameWidth = 800; 
+	sp1.init();
+</script>
+</body>
+</html>

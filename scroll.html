@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/master.css">
+<script src="js/jquery/jquery-1.9.1.js"></script>
+<script src="js/custom/jquery.scroll.js"></script>
+<style type="text/css">
+	.scrollx{ width:900px; margin:0 auto; overflow:hidden; height:200px;}
+	.roll-list{ float:left; display:inline; overflow:hidden; zoom:1; height:200px;}
+	.roll-list .roll-item{ float:left; display:inline; width:200px; height:200px; background:#ccc;}
+</style>
+</head>
+
+<body>
+<div class="scrollx" id="scrollx1">
+	<ul class="roll-list">
+    	<li class="roll-item">1</li>
+        <li class="roll-item">2</li>
+        <li class="roll-item">3</li>
+        <li class="roll-item">4</li>
+        <li class="roll-item">5</li>
+        <li class="roll-item">6</li>
+        <li class="roll-item">7</li>
+        <li class="roll-item">8</li>
+        <li class="roll-item">9</li>
+    </ul>
+</div>
+<a href="javascript:;" id="prev">上一个</a>
+<a href="javascript:;" id="next">下一个</a>
+<div class="scrollx" id="scrollx2">
+	<ul class="roll-list">
+    	<li class="roll-item">1</li>
+        <li class="roll-item">2</li>
+        <li class="roll-item">3</li>
+        <li class="roll-item">4</li>
+        <li class="roll-item">5</li>
+        <li class="roll-item">6</li>
+        <li class="roll-item">7</li>
+        <li class="roll-item">8</li>
+        <li class="roll-item">9</li>
+    </ul>
+</div>
+<a href="javascript:;" id="prev2">上一个</a>
+<a href="javascript:;" id="next2">下一个</a>
+<script>
+	$('#scrollx1').scrollx({
+		'prev':"#prev",
+		'next':"#next",
+		'direction':'left'
+	});
+	
+	$('#scrollx2').scrollx({
+		'prev':"#prev2",
+		'next':"#next2",
+		'direction':'right'
+	});
+</script>
+</body>
+</html>

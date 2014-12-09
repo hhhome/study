@@ -1,0 +1,346 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/mi/base.min.css">
+<link rel="stylesheet" href="css/jquery.fullPage.css">
+<link rel="stylesheet" href="css/mi/font/product-shouhuan.min.css">
+<link rel="stylesheet" href="css/mi/product-shouhuan.min.css">
+</head>
+
+<body>
+<div class="site-topbar">
+    <div class="container">
+        <div class="topbar-nav">
+                               <a href="javascript:;" >小米网</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">MIUI</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">米聊</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">游戏</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">多看阅读</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">云服务</a>
+                                   <span class="sep">|</span><a href="javascript:;" target="_blank">小米网移动版</a>
+                                   <span class="sep">|</span><a href="javascript:void(0);" class="J-modal-globalSites">Select region</a>
+                        </div>
+        <div class="topbar-info J_userInfo">
+                                                    <a data-needlogin="true" href="http://order.mi.com/site/login?ac=1">登录</a>
+                                    <span class="sep">|</span>                    <a  href="https://account.xiaomi.com/pass/register">注册</a>
+                        </div>
+    </div>
+</div>
+<!-- .site-topbar END -->
+
+<div class="site-header container">
+    <div class="site-logo">
+        <a class="logo" href="http://www.mi.com/index.php" title="小米官网"><i class="iconfont">&#xe61d;</i></a>
+            </div>
+    <div class="header-info">
+        <div class="search-section">
+            <form id="J_searchForm" class="search-form clearfix" action="/search" method="get">
+                <input class="search-text" type="search" name="keyword" value="" autocomplete="off" data-search-config={'defaultWords':["小米手机3","红米手机","贴膜","后盖","耳机","电池","生活周边","挂饰","米兔"]} placeholder="搜索您需要的商品" />
+                <input type="submit" class="search-btn iconfont" value="&#xe630;" />
+                <!--[if IE 6]><div class="ie6-fix"></div><![endif]-->
+                <div class="hot-words">
+                    <a href="javascript:;">小米手机4</a><a href="javascript:;">小米电视</a><a href="javascript:;">红米Note</a>                </div>
+            </form>
+        </div>
+        <div class="cart-section">
+            <a id="J_miniCart" class="mini-cart" href="http://order.mi.com/cart"><i class="iconfont">&#xe609;</i>购物车<span class="mini-cart-num J_cartNum"></span></a>
+            <div id="J_miniCartList" class="mini-cart-list">
+                <p class="loading">数据加载中，请稍后...</p>
+            </div>
+        </div>
+    </div>
+    <div class="header-nav clearfix">
+        <div id="J_categoryContainer" class="nav-category">
+            <a class="btn-category-list" href="http://www.mi.com/accessories">全部商品分类</a>
+            <div class="nav-category-section" style="display: none;">
+                <ul class="nav-category-list"></ul>
+            </div>
+        </div>
+        <div class="nav-main">
+            <ul class="nav-main-list J_menuNavMain clearfix">
+
+        
+                <li class="nav-main-item">
+                    <a href="http://www.mi.com/index.php"><span class="text">首页</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">小米手机</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                        
+                            <li class="first">
+                                <a class="item-detail" href="http://www.mi.com/mi4">
+                                    <span class="title" style="font-size:20px;">小米手机4</span>
+                                    <span class="desc">工艺和手感，超乎想象</span>
+                                    <span class="price"><b>1999</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-mi4.jpg" srcset="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-mi4_2x.jpg 2x" alt="小米手机3" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="item-detail" href="http://www.mi.com/mi3">
+                                    <span class="title" style="font-size:20px;">小米手机3</span>
+                                    <span class="desc">经典旗舰机型性价比之王</span>
+                                    <span class="price">特价：<b>1499</b>元起</span>
+                                    <span class="thumb">
+                                        <img src="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-mi3.jpg" srcset="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-mi3_2x.jpg 2x" alt="小米手机3" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">红米</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                        
+                            <li class="first">
+                                <a class="item-detail" href="http://www.mi.com/hongmi1s4g">
+    <span class="title">红米1S 4G版</span>
+    <span class="desc">千元4G手机性价比之王</span>
+    <span class="price"><b>599</b>元起</span>
+    <span class="thumb">
+        <img src="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-hongmi.jpg" srcset="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-hongmi_2x.jpg 2x" alt="红米手机" width="160" height="160"/>
+    </span>
+    <span class="desc">可选4G版 / 3G版</span>
+</a>
+                            </li>
+                        
+                            <li>
+                                <a class="item-detail" href="http://www.mi.com/note4g">
+    <span class="title">红米Note 4G版</span>
+    <span class="desc">5.5英寸大屏，支持4G网络</span>
+    <span class="price"><b>899</b>元</span>
+    <span class="thumb">
+        <img src="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-note.jpg" srcset="http://img03.mifile.cn/webfile/images/2014/cn/nav/nav-phone-note_2x.jpg 2x" alt="红米Note" width="160" height="160"/>
+    </span>
+</a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="http://www.mi.com/mipad"><span class="text">小米平板</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="http://www.mi.com/mitv"><span class="text">小米电视</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="http://www.mi.com/hezis"><span class="text">盒子</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="javascript: void(0);"><span class="text">路由器</span><span class="arrow"></span></a>
+                    <div class="nav-main-children">
+                        <ul class="children-list clearfix">
+                        
+                            <li class="first">
+                                <a class="item-detail" href="http://www.mi.com/miwifi">
+                                    <span class="title">小米路由器</span>
+                                    <span class="desc">顶配双频AC智能路由器<br>内置1TB大硬盘</span>
+                                    <span class="price"><b>699</b>元</span>
+                                    <span class="thumb">
+                                        <img src="http://img06.mifile.cn/v1/MI_18455B3E4DA706226CF7535A58E875F0267/T17FYvBXWT1RXrhCrK!160x160.jpg"  alt="小米路由器" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        
+                            <li>
+                                <a class="item-detail" href="http://www.mi.com/miwifimini">
+                                    <span class="title">小米路由器 mini</span>
+                                    <span class="desc">主流双频AC智能路由器<br>性价比之王</span>
+                                    <span class="price"><b>129</b>元</span>
+                                    <span class="thumb">
+                                        <img src="http://img06.mifile.cn/v1/MI_18455B3E4DA706226CF7535A58E875F0267/T1XsATBCLT1RXrhCrK!160x160.jpg"  alt="小米路由器 mini" width="160" height="160"/>
+                                    </span>
+                                </a>
+                            </li>
+                        
+                        </ul>
+                    </div>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="javascript:;"><span class="text">合约机</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="http://www.mi.com/service"><span class="text">服务</span></a>
+                </li>
+                
+                <li class="nav-main-item">
+                    <a href="http://www.xiaomi.cn"><span class="text">社区</span></a>
+                </li>
+                            </ul>
+        </div>
+    </div>
+    <div class="open-buy-info">
+        <a href="javascript:;">11月18日预约开放购买</a>
+    </div>
+</div>
+<!-- .site-header END -->
+
+<div class="sh-bar " id="shBar">
+    <div class="container ">
+        <h3>小米手环</h3>
+        <div class="menu" id="J_barMenu">
+            <span class="item" data-target="#shBox" >概述</span>
+            <span class="item" data-target="#shSpc">参数</span>
+            <span class="item">
+                <a target="_blank" href="http://order.mi.com/queue/f2code"  onclick="_hmt.push(['_trackEvent','PC','产品页_小米手环_A_F码通道']);">F码通道</a>
+            </span>
+            <span class="item">
+                <a target="_blank" href="http://www.mi.com/item/1144600001"  >购买炫彩腕带</a>
+            </span>
+            <span  class="btn btn-dakeLight btn-small J_lack" style="display:none;">暂时缺货</span>
+            <!-- <a href="http://hd.mi.com/webfile/zt/open/cn/index.html#shouhuan" class="btn btn-primary btn-small"  onclick="_hmt.push(['_trackEvent','PC','产品页_小米手环_A_立即预约']);">立即预约</a> -->
+            <!-- <a href="http://order.mi.com/misc/subscribe/goods/2143000001" class="btn btn-dakeLight btn-small hide J_lack">缺货登记</a> -->
+            <a href="" class="btn btn-small btn-primary J_buybtn ">立即购买</a>
+        </div>
+    </div>
+</div>
+<div class="sh-container" id="shBox">
+        <div id="shPage">
+            <div class="section section-01" id="section01">
+            	1aaaaaaaa
+            </div>
+            <div class="section section-02" id="section02">
+             2
+            </div>
+            <div class="section section-03" id="section03">
+            </div>
+            <div class="section section-04" id="section04">
+            </div>
+            <div class="section section-05" id="section05">
+            </div>
+            <div class="section section-06" id="section06">
+            </div>
+            <div class="section section-07" id="section07">
+            </div>
+            <div class="section section-08" id="section08">
+            </div>
+            <div class="section section-09" id="section09">
+            </div>
+            <div class="section section-10" id="section10">
+            </div>
+        </div>
+</div>
+<style>
+	.fp-easing-h{
+		-webkit-transition:all 1s cubic-bezier(.86, 0, .07, 1);
+		-moz-transition:all 1s cubic-bezier(.86, 0, .07, 1);
+		-o-transition:all 1s cubic-bezier(.86, 0, .07, 1);
+		transition:all 1s cubic-bezier(.86, 0, .07, 1);
+	 }
+</style>
+<script src="js/jquery/jquery-1.9.1.min.js"></script>
+<script src="js/jquery-ui/jquery-ui-1.10.3.min.js"></script>
+<script src="js/jquery.mousewheel.js"></script>
+<script src="js/jquery.fullPage.js"></script>
+<script>
+	var xmsh={
+		init:function(){
+			var _this = this;
+			_this.pageIndex=1;
+			_this.loadPage();
+			_this.fpEvent();
+			$.fn.fullpage.moveTo(1);
+			$("body").on("mousewheel", function(e, delta) {
+				if (e.preventDefault(), window.mousewheelStart === true){
+					 return false;
+				}
+				 window.mousewheelStart = true;
+				 _this.listenMousewheeEvent();
+				 console.log(_this.pageIndex);
+				 var g = delta > 0 ? true : false,
+                     h = 0 > delta ? true : false;
+			     if (1 === _this.pageIndex) {
+					 if (g ){
+						  _this.showHeader();
+				     }else if(h && window.headerIsShow){
+						 return _this.hideHeader(),false;
+					}
+			      }else if(10 === _this.pageIndex){
+					if(h){
+						alert("footer");
+					}
+				  }
+			});
+		},
+		fpEvent:function(){
+				$("#shPage").fullpage({
+					sectionsColor: ["#fff", "#4285f4", "#fff", "#fff", "#fff", "#fff", "#25282c", "#fff", "#fff", "#a2b900"],
+					anchors: ["01", "02", "03", "04", "05", "06", "07", "08", "09", "10"],
+					navigationTooltips: ["首页", "功能概述", "运动记录", "睡眠记录&闹钟", "蓝牙同步APP", "手环解锁", "来电提醒", "极致做工&芯片", "了解更多", "多彩百搭"],
+					css3: true,
+					navigation: true,
+					verticalCentered: false,
+					navigationPosition: "right",
+					afterRender: function() {
+						
+					},
+					afterLoad: function(a ,b) {
+						  switch (xmsh.pageIndex = b, b) {
+							  
+						  }
+					},
+					onLeave: function() {
+						xmsh.hideHeader();
+					},
+				});
+		},
+		loadPage:function(){
+			
+			var shBoxHeight = function() {
+				var h = $(window).height();
+				$("#shBox").height(h);
+			};
+        	shBoxHeight(); 
+			$(window).on("resize", function() {
+            	shBoxHeight(); 
+        	});
+			this.hideHeader();
+			
+		},
+		hideHeader:function(){
+			$(".site-topbar").addClass("fp-easing-h").css({"margin-top": "-197px"});
+			$("#shBar").addClass("sh-bar-fixed");
+			window.headerIsShow = false;
+			
+		},
+		showHeader:function(){
+			$(".site-topbar").addClass("fp-easing-h").css({"margin-top": 0});
+			$("#shBar").removeClass("sh-bar-fixed");
+			window.headerIsShow = true;
+		},
+		listenMousewheeEvent:function(){
+			 window.listenMousewheel && clearTimeout(window.listenMousewheel);
+			 window.listenMousewheel = setTimeout(function() {
+				window.mousewheelStart = false;
+			 }, 800)
+		}
+	}
+	
+	$(document).ready(function() {
+	  xmsh.init();
+	  $("#J_barMenu").on("click", ".item", function() {
+        var a = $(this).attr("data-target");
+		 $(a).show();
+		 "#shBox" === a ? (xmsh.init(), $("#shSpc").hide()) : "#shSpc" === a && ($("#shBox").hide().fullpage.destroy("all"), xmsh.showHeader(), $("body").off())
+	  });
+	});
+</script>
+</body>
+</html>

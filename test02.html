@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script type="text/javascript" src="js/jquery/jquery-1.9.1.min.js"></script>
+</head>
+
+<body>
+<div class="input-txt">
+<input type="text" maxlength ="3"><input type="text" maxlength ="3"><input type="text" maxlength ="3"><input type="text" maxlength ="3"><input type="text" maxlength ="3">
+
+</div>
+<style>
+	body{ height:1000px;}
+	.fixed{ width:200px; height:400px; background:#666; position:absolute; right:0; top:100px;}
+</style>
+<div class="fixed">
+
+</div>
+
+<script>
+	$('.input-txt input').each(function(i) {
+        var maxlength = $(this).attr("maxlength");
+		$(this).keyup(function(e) {
+       	 	if($(this).val().length == maxlength && $(this).next('input').size()){
+				$(this).next('input').focus();	
+			}
+			if(event.keyCode == 8 && $(this).val() == 0 && $(this).prev('input').size()){
+						$(this).prev('input').focus();
+			};
+    	});
+		
+    });
+
+	$(document).scroll(function(e) {
+        $('.fixed').css('top',function(){
+				
+		});
+    });
+</script>
+</body>
+</html>
