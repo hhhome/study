@@ -41,16 +41,20 @@
 	scrollPic_01.initialize();  //初始化*/
 /*
 	jBase.addEvent(jBase.$$('prev'),'click',a);
+	*/
 	function a(){
 		alert(this.nodeName.toLowerCase());
-	}*/
-	//jBase.removeEvent(jBase.$$('prev'),'click',a);
-
+	}
+	
 	var sp1 = new ScrollPic();
 
 	sp1.sContentId = "pic";
-	sp1.frameWidth = 800; 
+	sp1.prevId = "prev";
+	sp1.nextId = "next";
+	sp1.frameWidth = 800;
+	this.everyWidth = 100; 
 	sp1.init();
+	
 </script>
 </body>
 </html>
