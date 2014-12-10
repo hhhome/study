@@ -30,11 +30,11 @@ ScrollPic.prototype={
 		if(this.prevId){
 			this.prevObj = jBase.$$(this.prevId);
 			
-			jBase.addEvent(this.prevObj,'mousedown',Function("ScrollPic.childs[" + this.ID + "].move()"));
+			jBase.addEvent(this.prevObj,'mousedown',Function("ScrollPic.childs[" + this.ID + "].prev()"));
 		}
 		if(this.nextId){
 			this.nextObj = jBase.$$(this.nextId);
-			//jBase.addEvent(this.nextObj,'mousedown',this.move());
+			jBase.addEvent(this.nextObj,'mousedown',Function("ScrollPic.childs[" + this.ID + "].next()"));
 		}
 	},
 	initLayout: function(){
@@ -60,13 +60,26 @@ ScrollPic.prototype={
 		this.cItem02.style.display = 'inline';
 	},
 	move: function(){
-		//alert(this.sContentDiv.scrollLeft);
+
+
+	},
+	prev: function(){
 		if (this.sContentDiv.scrollLeft - this.everyWidth <= 0) {
-			alert(11);
+
             this.sContentDiv.scrollLeft = this.cItem01.scrollWidth + this.sContentDiv.scrollLeft - this.everyWidth
+        }else{
+
+        	this.sContentDiv.scrollLeft -= this.everyWidth;
         }
-	}
+	},
+	next: function(){
+		if(this.sContentDiv.scrollLeft + this.everyWidth >= this.cItem01.scrollWidth){
+			this.sContentDiv.scrollLeft = 0;            
+		}else{
+			this.sContentDiv.scrollLeft += this.everyWidth;
+		}
 	
+	}
 
 
 }
